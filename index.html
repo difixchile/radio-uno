@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Radio Uno</title>
+<link rel="shortcut icon" href="assets/images/favicon.png">
+<link rel="stylesheet" href="assets/css/master.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+
+<!--=== Loader Start ======-->
+<div id="loader-overlay">
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+</div>
+<!--=== Loader End ======--> 
+
+<!--=== Wrapper Start ===-->
+<div id="wrapper"> 
+  
+  <!--=== Header Start ===-->
+  <nav class="navbar-scrollspy navbar navbar-default navbar-fixed white bootsnav on no-full navbar-transparent">
+    <div class="container-fluid"> 
+      <!--=== Start Atribute Navigation ===-->
+      <div class="attr-nav">
+        <ul class="social-media-dark social-top">
+          <li><a href="https://www.facebook.com/radiounochillan/" class="ion-social-facebook"></a></li>
+        </ul>
+      </div>
+      <!--=== End Atribute Navigation ===--> 
+      
+      <!--=== Start Header Navigation ===-->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="eicon ion-drag"></i> </button>
+        <div class="logo"> <a href="index.html"> <img class="logo logo-display" src="assets/images/logo-white.png" alt=""> <img class="logo logo-scrolled" src="assets/images/logo-black.png" alt=""> </a> </div>
+      </div>
+      <!--=== End Header Navigation ===--> 
+      
+      <!--=== Collect the nav links, forms, and other content for toggling ===-->
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav" data-in="fadeIn" data-out="fadeOut">
+          <li><a class="page-scroll" href="#home">Inicio</a></li>
+        </ul>
+      </div>
+      <!--=== /.navbar-collapse ===--> 
+    </div>
+  </nav>
+  <!--=== Header End ===--> 
+  
+  <!--=== Hero Slider Start ===-->
+  <section class="hero-fullslide parallax" id="home" data-overlay-dark="8">
+    <div class="parallax-img" style="background: url(assets/images/background-uno-radio.jpg) center center / cover scroll no-repeat;" data-stellar-background-ratio="0.2"></div>
+    <div class="container">
+      <div class="row">
+        <div class="hero-text-slider slick">
+          <div class="zoom-text white-color text-center">
+            <h1>Radio Uno FM <br>
+              <strong>Hablamos Menos, Sonamos Más</strong></h1>
+                <audio id="stream" controls preload="none" style="width: 400px;">
+                <source src="https://streaming.comunicacioneschile.net/8008/stream" type="audio/mpeg">
+                </audio>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=== Hero Slider End ===--> 
+  
+  <!--=== Address Start ===-->
+  <section class="parallax-bg-8 fixed-bg" data-stellar-background-ratio="0.2" data-overlay-dark="8">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center white-color">
+          <h3>radiounochillan@gmail.com</h3>
+          <h4>En directo, desde Chillán para Chile y el mundo.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=== Address End ===--> 
+
+    
+  <!--=== Contact Form Start ===-->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 section-heading">
+          <h2>Hablamos con ustedes <br>
+            <strong> Contacto</strong></h2>
+          <div class="mt-10">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 contact-form">
+          <form name="contact-form" id="contact-form" action="php/contact.php" method="POST">
+            <div class="messages"></div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="sr-only" for="name">Nombre</label>
+                  <input type="text" name="name" class="form-control" id="name" required="required" placeholder="Su nombre*" data-error="Su nombre es obligatorio">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="sr-only" for="email">Correo electrónico</label>
+                  <input type="email" name="email" class="form-control" id="email" placeholder="Su correo electrónico*" required="required" data-error="Ingrese un correo válido">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label class="sr-only" for="subject">Asunto</label>
+                  <input type="text" name="subject" class="form-control" id="subject" placeholder="Su asunto*" required="required" data-error="Su asunto es requerido">
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="message">Mensaje</label>
+                  <textarea name="message" class="form-control" id="message" rows="7" placeholder="Su mensaje*" required data-error="Por favor, deje su mensaje"></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="text-center">
+                  <button type="submit" name="submit" class="btn btn-color btn-md">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=== Contact Form Start ===--> 
+  
+  
+  <!--=== Google Maps Start ======-->
+  <section class="map-section pt-0 pb-0">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25620.629756689137!2d-72.1212213097508!3d-36.61245412137728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9668d7c2b6f00259%3A0x14fe84c4f1092ea8!2zQ2hpbGxhbiwgQ2hpbGzDoW4sIMORdWJsZQ!5e0!3m2!1ses-419!2scl!4v1659212318507!5m2!1ses-419!2scl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <!--=== Google Maps End ======--> 
+  
+  <!--=== Footer Start ===-->
+  <footer class="footer" id="footer-fixed">
+    <div class="footer-main"> <a href="index.html"><img src="assets/images/logo-footer.png" alt="#" class="mr-center img-responsive"></a>
+      <ul class="social-media">
+        <li><a href="https://www.facebook.com/radiounochillan/" class="ion-social-facebook"></a></li>
+      </ul>
+      <div class="copy-right">© 2022 Difix: Digital Media Group. All rights reserved</div>
+    </div>
+  </footer>
+  <!--=== Footer End ===--> 
+  
+  <!--=== GO TO TOP  ===--> 
+  <a href="#" id="back-to-top" title="Back to top"><i class="ion-chevron-up"></i></a> 
+  <!--=== GO TO TOP End ===--> 
+  
+</div>
+<!--=== Wrapper End ===--> 
+
+<!--=== Javascript Plugins ===--> 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv7LYRzyivt-k-4wMEENhy-cMR_KMO_8A"></script> 
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/validator.js"></script> 
+<script src="assets/js/plugins.js"></script> 
+<script src="assets/js/master.js"></script> 
+<script src="assets/js/bootsnav.js"></script> 
+<!--=== Javascript Plugins End ===-->
+
+</body>
+</html>
